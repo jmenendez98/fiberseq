@@ -6,7 +6,7 @@ Inputs are generated using [fibertools-rs](https://github.com/fiberseq/fibertool
   &nbsp; `conda install -c conda-forge -c bioconda fibertools-rs`   
 
 ### fix_ftextract.sh
-Usage: /public/home/jmmenend/bin/fix_ftextract.sh -i <input_bed> -o <fixed_bed>   
+Usage: fix_ftextract.sh -i <input_bed> -o <fixed_bed>   
 
 Options:   
  &nbsp; -i <input_bed>: Path to input bed file.   
