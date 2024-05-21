@@ -3,11 +3,15 @@ The goal of this repository is to facilitate the readability and accessibility o
 ### Inputs:
 
 Inputs are generated using [fibertools-rs](https://github.com/fiberseq/fibertools-rs). Specifically `ft extract` ([documentation](https://github.com/fiberseq/fibertools-rs/blob/main/docs/extract.md). The environment for fibertools can be made through conda:   
-  &nbsp; `conda install -c conda-forge -c bioconda fibertools-rs`   
+ > `conda install -c conda-forge -c bioconda fibertools-rs`   
 
 ### fix_ftextract.sh
+```
+Removes overlapping block entries at the ends of reads. Checks if second to last and last entry overlap at all and removes last one if they do.
+
 Usage: fix_ftextract.sh -i <input_bed> -o <fixed_bed>   
 
 Options:   
- &nbsp; -i <input_bed>: Path to input bed file.   
- &nbsp; -o <fixed_bed>: Output path of fixed bed file.
+  -i <input_bed>: Path to input bed file.   
+  -o <fixed_bed>: Output path of fixed bed file.
+ ```
